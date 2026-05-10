@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Corceptive Media</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="brand">Corceptive Media</div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a class="active" href="contact.html">Contact</a>
-  </nav>
+  <div class="header-inner">
+    <div class="site-title"><a href="index.html">Corceptive Media</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active-link">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Open menu" onclick="document.getElementById('mob-nav').classList.toggle('is-open')">
+      <span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<section class="page-hero light">
-  <h1>Contact</h1>
-</section>
+<div class="mob-nav" id="mob-nav">
+  <button class="mob-close" onclick="document.getElementById('mob-nav').classList.remove('is-open')">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-<section class="contact-section">
+<div class="contact-wrap">
+  <h1>Let's get in touch</h1>
+  <p class="lead">Share a few details below and someone from our team will get in touch with you ASAP.</p>
+  <p class="reply">We usually reply within 24 hours</p>
 
-  <div class="contact-copy">
-    <h2>Reach Out</h2>
-
-    <p>
-      For collaborations, media strategy,
-      visual direction, and editorial systems.
-    </p>
-  </div>
-
-  <form class="contact-form">
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Message"></textarea>
-
-    <button type="submit">Send</button>
+  <form class="cform" onsubmit="return false;">
+    <div class="row2">
+      <div>
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="fname" required placeholder="First name">
+      </div>
+      <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Last name">
+      </div>
+    </div>
+    <div>
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required placeholder="your@email.com">
+    </div>
+    <div>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000">
+    </div>
+    <div>
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Send Message</button>
   </form>
+</div>
 
-</section>
-
-<footer>
-  © Corceptive Media
+<footer class="site-footer">
+  <p>&copy; 2026 Corceptive Media. All rights reserved.</p>
 </footer>
 
 </body>
