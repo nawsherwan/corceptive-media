@@ -1,87 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Corceptive Media</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">Corceptive Media</a>
+  <div class="brand">Corceptive Media</div>
 
-    <button class="menu-toggle" id="menuToggle">
-      ☰
-    </button>
-
-    <nav class="main-nav" id="mainNav">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+  <nav>
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<main>
-
-<section class="hero-section darkest-theme">
-  <div class="container hero-grid">
-    <div class="hero-content">
-      <h1>Corceptive Media</h1>
-      <p>
-        Strategic creative direction, storytelling systems, and editorial media built with clarity, restraint, and visual precision.
-      </p>
-    </div>
-
-    <div class="hero-image-wrapper">
-      <img src="assets/images/hero-image.png" alt="Corceptive Media Hero">
-    </div>
-  </div>
-</section>
-
-<section class="content-section light-theme">
-  <div class="container two-column-grid">
-    <div>
-      <h2>Editorial Thinking</h2>
-    </div>
-
-    <div>
-      <p>
-        Corceptive Media operates at the intersection of cinematic storytelling, strategic communication, and refined visual systems.
-      </p>
-
-      <p>
-        Every structure, layout rhythm, and spatial ratio is intentionally preserved to maintain editorial balance and clarity.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="content-section bright-theme">
-  <div class="container centered-content">
-    <h2>Visual Systems</h2>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Corceptive<br>Media</h1>
 
     <p>
-      Structured brand environments, narrative architecture, and refined communication experiences.
+      Strategic creative direction, storytelling systems,
+      and editorial media built with clarity,
+      restraint, and visual precision.
+    </p>
+  </div>
+
+  <div class="hero-image-wrap">
+    <img src="assets/images/hero-image.png" alt="">
+  </div>
+</section>
+
+<section class="editorial-section light">
+  <div class="editorial-left">
+    <h2>Editorial Thinking</h2>
+  </div>
+
+  <div class="editorial-right">
+    <p>
+      Corceptive Media operates at the intersection of cinematic storytelling,
+      strategic communication, and refined visual systems.
+    </p>
+
+    <p>
+      Every structure, layout rhythm, and spatial ratio is intentionally preserved
+      to maintain editorial balance and clarity.
     </p>
   </div>
 </section>
 
-</main>
+<section class="statement">
+  <h2>Visual Systems</h2>
 
-<footer class="site-footer darkest-theme">
-  <div class="container footer-inner">
-    <p>© Corceptive Media</p>
-  </div>
+  <p>
+    Structured brand environments, narrative architecture,
+    and refined communication experiences.
+  </p>
+</section>
+
+<footer>
+  © Corceptive Media
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
