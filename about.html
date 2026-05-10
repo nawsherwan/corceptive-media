@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Corceptive Media</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="brand">Corceptive Media</div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a class="active" href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="header-inner">
+    <div class="site-title"><a href="index.html">Corceptive Media</a></div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active-link">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Open menu" onclick="document.getElementById('mob-nav').classList.toggle('is-open')">
+      <span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<section class="page-hero light">
-  <h1>About</h1>
-</section>
+<div class="mob-nav" id="mob-nav">
+  <button class="mob-close" onclick="document.getElementById('mob-nav').classList.remove('is-open')">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-<section class="editorial-section">
-  <div class="editorial-left">
-    <h2>Approach</h2>
+<div class="about-intro">
+  <div>
+    <h1>Hi, I'm Sophie.</h1>
+    <p>This isn't just a Digital Marketing business — it's a reflection of what my team believes in. We're here to create work that matters, led by a shared commitment to quality and scale.</p>
   </div>
+  <img src="assets/images/about-team1.png" alt="Sophie — Team" width="600" height="750" loading="lazy">
+</div>
 
-  <div class="editorial-right">
-    <p>
-      Corceptive Media develops structured visual communication systems rooted
-      in restraint, hierarchy, and narrative clarity.
-    </p>
-
-    <p>
-      The reconstruction preserves the same spacing logic,
-      section sequencing, and responsive behavior present within
-      the original Squarespace implementation.
-    </p>
+<div class="about-block reverse">
+  <img src="assets/images/about-team2.png" alt="Our Approach" width="600" height="750" loading="lazy">
+  <div>
+    <h2>My Approach</h2>
+    <p>What began as a passion project has evolved into something more. We're proud of where we've been and even more excited for what's ahead.</p>
+    <p>What sets us apart isn't just our process — it's the intention behind it. We take time to understand, explore, and create with purpose at every turn.</p>
   </div>
-</section>
+</div>
 
-<section class="deep-section">
-  <h2>Structure Before Decoration</h2>
-</section>
-
-<footer>
-  © Corceptive Media
+<footer class="site-footer">
+  <p>&copy; 2026 Corceptive Media. All rights reserved.</p>
 </footer>
 
 </body>
