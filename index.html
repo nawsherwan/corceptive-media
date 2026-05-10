@@ -1,74 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Corceptive Media</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="brand">Corceptive Media</div>
-
-  <nav>
-    <a class="active" href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="header-inner">
+    <div class="site-title"><a href="index.html">Corceptive Media</a></div>
+    <nav class="main-nav">
+      <a href="index.html" class="active-link">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Open menu" onclick="document.getElementById('mob-nav').classList.toggle('is-open')">
+      <span></span><span></span>
+    </button>
+  </div>
 </header>
 
+<div class="mob-nav" id="mob-nav">
+  <button class="mob-close" onclick="document.getElementById('mob-nav').classList.remove('is-open')">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
 <section class="hero">
+  <img class="hero-bg" src="assets/images/hero-bg.png" alt="" width="1500" height="1039">
   <div class="hero-text">
-    <h1>Corceptive<br>Media</h1>
-
-    <p>
-      Strategic creative direction, storytelling systems,
-      and editorial media built with clarity,
-      restraint, and visual precision.
-    </p>
-  </div>
-
-  <div class="hero-image-wrap">
-    <img src="assets/images/hero-image.png" alt="">
+    <h1>Where creativity meets clarity &amp; vision meets action.</h1>
   </div>
 </section>
 
-<section class="editorial-section light">
-  <div class="editorial-left">
-    <h2>Editorial Thinking</h2>
-  </div>
-
-  <div class="editorial-right">
-    <p>
-      Corceptive Media operates at the intersection of cinematic storytelling,
-      strategic communication, and refined visual systems.
-    </p>
-
-    <p>
-      Every structure, layout rhythm, and spatial ratio is intentionally preserved
-      to maintain editorial balance and clarity.
-    </p>
+<section class="section-approach">
+  <div class="approach-grid">
+    <div><h2>Our Approach</h2></div>
+    <div>
+      <p>We're a team of passionate thinkers and doers, dedicated to building with purpose and clarity. Collaboration and curiosity drive everything we do.</p>
+      <p>Our process is simple, thoughtful, and designed with your experience in mind. We believe great results come from clear steps, open collaboration, and a shared sense of purpose.</p>
+    </div>
   </div>
 </section>
 
-<section class="statement">
-  <h2>Visual Systems</h2>
+<section class="section-services">
+  <div class="services-wrap">
+    <div class="services-header">
+      <h2>Our Services</h2>
+      <p>Explore our range of services designed to help you move forward with confidence, wherever you're headed next.</p>
+    </div>
+    <div class="services-grid">
 
-  <p>
-    Structured brand environments, narrative architecture,
-    and refined communication experiences.
-  </p>
+      <div class="card">
+        <img src="assets/images/service-performance.png" alt="Performance Marketing" width="600" height="600" loading="lazy">
+        <div class="card-body">
+          <div class="card-title">Performance Marketing</div>
+          <div class="card-price">₹0.00</div>
+          <p class="card-desc">We help real estate brands generate high-quality leads through performance-driven marketing, targeted campaigns, and optimized digital strategies designed to maximize visibility, conversions, and ROAS.</p>
+          <button class="btn-cart">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/service-digital.png" alt="Digital Marketing" width="600" height="600" loading="lazy">
+        <div class="card-body">
+          <div class="card-title">Digital Marketing</div>
+          <div class="card-price">₹0.00</div>
+          <p class="card-desc">Scale your brand with data-driven performance marketing designed to generate measurable growth. Corceptive Media helps businesses increase visibility, acquire high-intent customers, and maximize ROI through affiliate marketing, media buying, lead generation, and strategic digital campaigns tailored for modern brands.</p>
+          <button class="btn-cart">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/service-brand.png" alt="Brand Strategy" width="600" height="600" loading="lazy">
+        <div class="card-body">
+          <div class="card-title">Brand Strategy</div>
+          <div class="card-price">₹0.00</div>
+          <p class="card-desc">We help you build a stronger brand through strategic positioning, creative direction, and audience-focused messaging designed to create lasting recognition, trust, and meaningful market impact.</p>
+          <button class="btn-cart">Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<footer>
-  © Corceptive Media
+<footer class="site-footer">
+  <p>&copy; 2026 Corceptive Media. All rights reserved.</p>
 </footer>
 
 </body>
