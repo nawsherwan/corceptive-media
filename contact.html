@@ -29,36 +29,40 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<div class="contact-wrap">
-  <h1>Let's get in touch</h1>
-  <p class="lead">Share a few details below and someone from our team will get in touch with you ASAP.</p>
-  <p class="reply">We usually reply within 24 hours</p>
+<div class="contact-section">
+  <img class="contact-image" src="assets/images/contact-image.png" alt="Corceptive Media contact us" width="1086" height="1448" loading="lazy">
 
-  <form class="cform" onsubmit="return false;">
-    <div class="row2">
-      <div>
-        <label for="fname">First Name *</label>
-        <input type="text" id="fname" name="fname" required placeholder="First name">
+  <div class="contact-form-col">
+    <h1>Let's get in touch</h1>
+    <p class="lead">Share a few details below and someone from our team will get in touch with you ASAP.</p>
+    <p class="reply">We usually reply within 24 hours</p>
+
+    <form class="cform" onsubmit="return false;">
+      <div class="row2">
+        <div>
+          <label for="fname">First Name *</label>
+          <input type="text" id="fname" name="fname" required placeholder="First name">
+        </div>
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Last name">
+        </div>
       </div>
       <div>
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname" placeholder="Last name">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com">
       </div>
-    </div>
-    <div>
-      <label for="email">Email Address *</label>
-      <input type="email" id="email" name="email" required placeholder="your@email.com">
-    </div>
-    <div>
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000">
-    </div>
-    <div>
-      <label for="message">Message *</label>
-      <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
-    </div>
-    <button type="submit" class="btn-submit">Send Message</button>
-  </form>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000">
+      </div>
+      <div>
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </div>
 </div>
 
 <footer class="site-footer">
